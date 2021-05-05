@@ -8,3 +8,10 @@ cat<<'EOF'
 
 
 EOF
+
+
+nohup firefox -new-tab https://www.youtube.com/watch?v=-MJi7T4lX80&t=11578s &
+sleep 2;
+firefox -new-tab gmail.com;
+sleep 1;
+firefox -new-tab github.com;
