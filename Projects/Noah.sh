@@ -23,5 +23,7 @@ sleep 2;
 firefox -new-tab gmail.com;
 sleep 1;
 firefox -new-tab github.com;
-
+sleep 1;
+firefox -new-tab evernote.com
+#I use evernote to take down my notes. It is pretty useful.
 #Sleep is added to create delay to avoid errors.
