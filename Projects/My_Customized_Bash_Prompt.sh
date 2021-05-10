@@ -1,3 +1,7 @@
+: '
+Printf at the beginning is used to give red colour to Whos there ASCII ART.
+'
+
 printf '\033[1;31m';
 cat<<EOF
  _    _ _           _       _____ _                     ___  
