@@ -18,10 +18,10 @@ EOF
 
 
 cat <<'EOF'
-	 Git Choice Menu
+	  Git Choice Menu
 -------------------------------------------------------
-   Press 1 - For Cloning the Repo
-   Press 2 - For Pushing to Repo
+    Press 1 - For Cloning the Repo
+    Press 2 - For Pushing to Repo
 -------------------------------------------------------
 EOF
 
