@@ -12,6 +12,11 @@ alias gitbot='source path';
 you have to change the path to the location of this shell script on your PC.
 So, Whenever you type gitbot in your terminal this script will run thus automating the git push process.
 
+
+For detailed explanation of the project, you can refer my medium article on git automation.
+
+https://jishnun789.medium.com/git-automation-using-shell-scripts-e420767df36f
+
 EOF
 
 # flag is used to identify whether this push is first one or not. It value changes if a .git is not found on the current directory.
