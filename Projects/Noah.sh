@@ -22,7 +22,7 @@ read command;
 if [ `echo $command | grep -iw "y"` ];
 then
 
-nohup firefox -new-tab https://www.youtube.com/watch?v=-MJi7T4lX80&t=11578s &
+nohup firefox -new-tab https://www.youtube.com/watch?v=pXR_qBBZeNk&t=5932s &
 
 #This is what I listen to While I code :)
 
