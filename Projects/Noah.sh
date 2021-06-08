@@ -32,6 +32,8 @@ sleep 1;
 firefox -new-tab github.com;
 sleep 1;
 firefox -new-tab evernote.com
+sleep 1;
+firefox -new-tab https://calendar.google.com/calendar/u/0/r/week;
 else
 	echo "As you wish boss";
 fi
