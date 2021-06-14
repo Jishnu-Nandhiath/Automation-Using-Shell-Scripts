@@ -24,9 +24,9 @@ then
 
 #network_status is added to check whether the system is connected to internet, else opening all the tabs will be a waste of time.
 
-network_status=$(ping -c 1 google.com | grep 100%);
+network_status=$(ping -c 1 google.com | grep -w 0%);
 
-if [ -z "$network_status" ]
+if [ ! -z "$network_status" ]
 then
 
 nohup firefox -new-tab https://www.youtube.com/watch?v=pXR_qBBZeNk&t=5932s &
@@ -43,9 +43,11 @@ sleep 1;
 firefox -new-tab https://calendar.google.com/calendar/u/0/r/week;
 sleep 2;
 rm 'nohup.out';
+
 else
-	echo "No network, Please connect me to Internet Boss";
+	echo -e "\nSorry Boss, We're not connected to the Internet\n";
 fi
+
 else
 	echo "As you wish boss";
 fi

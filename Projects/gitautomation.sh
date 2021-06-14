@@ -21,6 +21,10 @@ EOF
 
 # flag is used to identify whether this push is first one or not. It value changes if a .git is not found on the current directory.
 
+network_status=$(ping -c 1 google.com | grep -w 0%);
+
+if [ ! -z "$network_status" ]
+then
 
 cat <<'EOF'
 	   Git Choice Menu
@@ -31,6 +35,8 @@ cat <<'EOF'
 EOF
 
 read user_choice;
+
+
 
 case $user_choice in 
 	1)
@@ -121,3 +127,6 @@ fi
 
 esac
 
+else
+	echo -e "\nSorry Boss, You're not connected to the Internet\n";
+fi
