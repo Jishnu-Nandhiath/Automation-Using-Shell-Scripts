@@ -22,6 +22,13 @@ read command;
 if [ `echo $command | grep -iw "y"` ];
 then
 
+#network_status is added to check whether the system is connected to internet, else opening all the tabs will be a waste of time.
+
+network_status=$(ping -c 1 google.com | grep 100%);
+
+if [ -z "$network_status" ]
+then
+
 nohup firefox -new-tab https://www.youtube.com/watch?v=pXR_qBBZeNk&t=5932s &
 
 #This is what I listen to While I code :)
@@ -37,7 +44,12 @@ firefox -new-tab https://calendar.google.com/calendar/u/0/r/week;
 sleep 2;
 rm 'nohup.out';
 else
+	echo "No network, Please connect me to Internet Boss";
+fi
+else
 	echo "As you wish boss";
 fi
+
 #I use evernote to take down my notes. It is pretty useful.
 #Sleep is added to create delay to avoid errors.
+
