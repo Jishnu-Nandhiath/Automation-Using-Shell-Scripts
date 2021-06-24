@@ -86,6 +86,8 @@ echo -e "\nCan I confirm the push boss (y/n) ?";
 read user_input;
 echo;
 
+echo -e "\nEnter the branch name\n";
+read branch;
 
 if [ `echo $user_input | grep -iw y` ]
 then
@@ -102,11 +104,11 @@ then
 		git remote add origin $git_url;
 	fi 
 
-	git pull origin main;
+	git pull origin $branch;
 
 	echo -e "\npushing to branch main \n";
 
-	git push origin main;
+	git push origin $branch;
 
       	if [ $? -eq 0 ];
 	then
